@@ -1,0 +1,4 @@
+FROM openjdk:17
+ADD target/user_management_ms.jar user_management_ms.jar
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","user_management_ms.jar"]
